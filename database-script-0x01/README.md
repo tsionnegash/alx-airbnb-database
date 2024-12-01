@@ -1,9 +1,13 @@
+A `README` for the database schema and SQL queries.
+
 ---
 
 # **Database Schema README**
 
 ## **Overview**
+
 This database schema is designed for a booking platform where users can create accounts, make bookings for properties, leave reviews, and send messages. The schema consists of six main entities:
+
 - **User**
 - **Property**
 - **Booking**

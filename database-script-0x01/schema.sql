@@ -6,7 +6,7 @@ CREATE TABLE User (
     email VARCHAR(255) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL,
     phone_number VARCHAR(20),
-    role ENUM('guest', 'host', 'admin') NOT NULL
+    role ENUM('guest', 'host', 'admin') NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
