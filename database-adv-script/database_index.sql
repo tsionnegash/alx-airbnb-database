@@ -1,3 +1,5 @@
+-- 2. SQL CREATE INDEX Commands
+
 -- Create index on user_id in the User table for faster JOIN operations
 CREATE INDEX idx_user_id ON User(user_id);
 
@@ -27,3 +29,12 @@ CREATE INDEX idx_property_host_id ON Property(host_id);
 
 -- Create index on pricepernight in the Property table for faster sorting and filtering by price
 CREATE INDEX idx_property_price ON Property(pricepernight);
+
+
+-- 3. Measure Query Performance Before and After Adding Indexes Using EXPLAIN or ANALYZE;
+
+
+EXPLAIN SELECT * FROM Booking WHERE user_id = 'some_user_id';
+
+EXPLAIN SELECT * FROM Booking WHERE user_id = 'some_user_id';
+
