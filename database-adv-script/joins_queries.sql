@@ -10,7 +10,7 @@ SELECT b.booking_id,
        u.first_name,
        u.last_name,
        u.email
-  from booking b
+  FROM booking b
  inner join user u
 on b.user_id = u.user_id;
 
@@ -27,7 +27,7 @@ SELECT p.property_id,
        r.rating,
        r.comment,
        r.created_at as review_created_at
-  from property p
+  FROM property p
   left join review r
 on p.property_id = r.property_id;
 
@@ -44,6 +44,6 @@ SELECT u.user_id,
        b.end_date,
        b.total_price,
        b.status
-  from user u
+  FROM user u
   full outer join booking b
 on u.user_id = b.user_id;
