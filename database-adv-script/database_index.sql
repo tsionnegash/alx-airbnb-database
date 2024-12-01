@@ -34,7 +34,7 @@ CREATE INDEX idx_property_price ON Property(pricepernight);
 -- 3. Measure Query Performance Before and After Adding Indexes Using EXPLAIN or ANALYZE;
 
 
-EXPLAIN SELECT * FROM Booking WHERE user_id = 'some_user_id';
+EXPLAIN ANALYZE SELECT * FROM Booking WHERE user_id = 'some_user_id';
 
-EXPLAIN SELECT * FROM Booking WHERE user_id = 'some_user_id';
+EXPLAIN ANALYZE SELECT * FROM Booking WHERE user_id = 'some_user_id';
 
