@@ -37,3 +37,24 @@ Here’s a simple README for the provided queries:
 - **Key Feature**: **Correlated Subquery** is used to count the number of bookings made by each user. The query returns users who have more than 3 bookings by referencing the `user_id` from the outer query in the subquery.
 
 ---
+
+Here's a simple README for the provided SQL queries:
+
+---
+
+# SQL Queries for User and Property Analysis
+
+## 1. Find the Total Number of Bookings Made by Each User
+
+- **Purpose**: This query calculates the total number of bookings made by each user.
+- **Key Features**:
+  - **COUNT function**: Counts the number of bookings for each user.
+  - **GROUP BY clause**: Groups the results by `user_id` to ensure the count is done per user.
+
+## 2. Rank Properties Based on the Total Number of Bookings They Have Received
+
+- **Purpose**: This query ranks properties based on the total number of bookings they have received.
+- **Key Features**:
+  - **COUNT function**: Counts the number of bookings for each property.
+  - **Window function (ROW_NUMBER)**: Ranks the properties in descending order of their booking count.
+  - **LEFT JOIN**: Ensures properties with no bookings are included in the result with a booking count of zero.
